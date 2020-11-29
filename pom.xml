@@ -43,11 +43,23 @@
 			<version>1.16</version>
 		</dependency>
 
-		<!-- MariaDB -->
+<!--		&lt;!&ndash; MariaDB &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.mariadb.jdbc</groupId>-->
+<!--			<artifactId>mariadb-java-client</artifactId>-->
+<!--		</dependency>-->
+
+		<!-- MysqlDB -->
 		<dependency>
-			<groupId>org.mariadb.jdbc</groupId>
-			<artifactId>mariadb-java-client</artifactId>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>com.h2database</groupId>-->
+<!--			<artifactId>h2</artifactId>-->
+<!--			<scope>runtime</scope>-->
+<!--		</dependency>-->
 
 		<!-- LOMBOK -->
 		<dependency>
