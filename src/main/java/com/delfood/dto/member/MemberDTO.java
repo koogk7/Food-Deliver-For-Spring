@@ -1,6 +1,8 @@
 package com.delfood.dto.member;
 
 import java.time.LocalDateTime;
+
+import com.delfood.utils.SHA256Util;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
@@ -59,5 +61,7 @@ public class MemberDTO {
         || memberInfo.getMail() == null;
   }
 
-
+  public String getEncodedPassword() {
+      return SHA256Util.encryptSHA256(this.password); // TODO - Fix : 인터페이스 및 파라미터로 주입성 받게끔 구현
+  }
 }
